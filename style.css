@@ -1,0 +1,181 @@
+#mainarea{
+    height: 2000px;
+    width: 1200px;
+    margin: 0 auto;
+}
+/* ------------navbar area ---------*/
+
+#navbar {
+    height:150px;
+    width:1200px;
+    background-color:none;
+    display:flex;
+    position: relative;
+}
+#logo{
+    height:60px;
+    width:60px;
+    background-color:white;
+    float:left;
+}
+#logo img{
+    height:100%;
+    width:100%;
+}
+#navbar ul{
+    display:flex;
+    margin:0;
+    padding:0;
+    float:left;
+}
+#navbar ul li {
+    list-style:none;
+    font-size:1.3rem;
+    display: block;
+}
+#navbar ul li a:link{
+    display:block;
+    padding:10px 10px;
+    border-radius:5px;
+    text-decoration:none;
+    color:white;
+    background:green;
+}
+#navbar ul li a:hover{
+    color:green;
+    background:white;
+}
+
+/* ------------home area ---------*/
+
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:3px 2px;
+    justify-content:center ;
+    align-item:center ;
+    background:none;
+    height:400px;
+    width:1200px;
+    float:left;
+}
+#home::before{
+    content:"";
+    position:absolute ;
+    background :url('bg1.jpg');
+    width:200%;
+    height:100%;
+    z-index:-1;
+    opacity:0.8;
+   
+}
+
+
+
+/* ------------service area ---------*/
+
+#service{
+    padding:3px 2px;
+    justify-content:center ;
+    background:none;
+    height:400px;
+    width:1200px;
+    float:left;
+}
+#service::before{
+    content:"";
+    position:absolute ;
+    width:1200px;
+    height:400px;
+    z-index:-1;
+    opacity:0.8;
+   
+}
+
+.box{
+    height:150px;
+    width:150px;
+    margin:50px 100px;
+    background:pink;
+    float:left;
+    display:flex;
+    }
+ .box img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+/* ------------client area ---------*/
+#client-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 1200px;
+}
+#client-section::before{
+    position: absolute;
+    content: "";
+    width: 1200px;
+    height: 300px;
+    background:url('bg4.jpg');
+    z-index: -1;
+    opacity: 0.9;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.client-item{
+    height:40px;
+    width:40px;
+    margin:10px 100px;
+    background:none;
+    float:left;
+    display:flex;
+    }
+.client-item img{
+    height: 100%;
+    width: 100%;
+    padding: 34px;
+    border-radius: 10px;
+}
+
+/* ------------contact area ---------*/
+#contact{
+    position: relative;
+    height: 300px;
+    width: 1200px;
+    
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('bg3.jpg');
+}
+
+.h-primary{
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+    .h-secondary{
+        font-size: 1.2rem;
+        text-align: center;
+        justify-content: center;
+    }
+/* ------------footer area ---------*/
+
+
